@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Markdown]]></title>
+    <url>%2F2017%2F07%2F22%2FMarkdown%2F</url>
+    <content type="text"><![CDATA[Site - Link 创始人 John Gruber 的 Markdown 语法说明 Mastering Markdown Markdown 中文版语法说明 在线编辑器 MaHua Syntax guidesPARAGRAPHS AND LINE BREAKS | 段落和换行1段落只是一个或多个连续的文本行，由一个或多个空白行分隔。（空白行是任何看起来像空白行的行 - 只包含空格或制表符的行除外）。正常段落不应缩进空格或制表符。 段落只是一个或多个连续的文本行，由一个或多个空白行分隔。（空白行是任何看起来像空白行的行 - 只包含空格或制表符的行除外）。正常段落不应缩进空格或制表符。 1当你不想要插入&lt;br /&gt;使用降价标签休息，你最终有两个或多个空格行，然后键入回报。 是的，这需要更多的努力创建一个，但一个简单的“每一个换行是一个”规则将不适用于Markdown。 当您使用硬休息格式化时，Markdown的电子邮件风格的块引用和多段列表项目工作效果最好 - 看起来更好。 HEADERS123# This is an &lt;h1&gt; tag## This is an &lt;h2&gt; tag###### This is an &lt;h6&gt; tag BLOCKQUOUTES | 引用文字1&gt; ... LISTS123456789101112131415* ...* ...* ...OR+ ...+ ...+ ...OR- ...- ...- ...OR1. ...2. ...3. ... CODE BLOCK simply indent every line of the block by at least 4 spaces or 1 tab or123\`\`\`...\`\`\` TABLE12345678910First Header | Second Header------------ | -------------Content from cell 1 | Content from cell 2Content in the first column | Content in the second columnor| Tables | Are | Cool || ------------- |:-------------:| -----:|| col 3 is | right-aligned | $1600 || col 2 is | centered | $12 || zebra stripes | are neat | $1 | HORIZONTAL RULES | 水平规则 |123456789* * *********- - ---------------------------------------- LINKS1[an example](http://example.com/ &quot;Title&quot;) EMPHASIS | 强调1234567*single asterisks*_single underscores_**double asterisks**__double underscores__ CODE1Use the `printf()` function. IMAGES123![Alt text](/path/to/img.jpg)![Alt text](/path/to/img.jpg &quot;Optional title&quot;)]]></content>
+      <categories>
+        <category>Programing Language</category>
+        <category>Markup Language</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2017%2F07%2F18%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
