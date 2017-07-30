@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[OnePlus X H2os 2.0 install Gapp]]></title>
+    <url>%2F2017%2F07%2F24%2FOnePlus-X-H2os-2-0-install-Gapp%2F</url>
+    <content type="text"><![CDATA[在 氢OS2.0版 基础上安装谷歌应用。 流程 安装 氢OS 2.0版(不重启) 双清 进入fastboot模式， 刷入twrp recovery(3.0.3-onyx) 进入twrp recovery, 刷入open gapp(arm6.0, nano) 重启 清楚Google paly应用缓存 Command12345678910111213&gt; adb devices&gt; adb reboot bootloader-----------------------------------------------&gt; fastboot devices&gt; fastboot oem unlock-----------------------------------------------&gt; adb reboot bootloader&gt; fastboot flash recovery twrp.img&gt; fastboot boot twrp.img LinkOnePlusH2OS_14_OTA_001_all_201610291136_98e9299fced2483e.zip:[Download]OnePlus X officail recovery:[Download Oxygen Recovey (Optional)]twrp-3.0.3-0-onyx.img:[Download] [OK H2os 2.0 安装Gapp][不双清给一加氢 OS 刷上 Google Apps]]]></content>
+      <categories>
+        <category>Android</category>
+        <category>OnePlus X</category>
+      </categories>
+      <tags>
+        <tag>OnePlus X</tag>
+        <tag>氢OS</tag>
+        <tag>Gapp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ShadowsocksR/SSR]]></title>
+    <url>%2F2017%2F07%2F23%2FShadowsocksR-SSR%2F</url>
+    <content type="text"><![CDATA[Software Link breakwa11/shadowsocks-rss teddysun/shadowsocks_install ShadowsocksR shadowsocksr-android shadowsocksr-csharp 购买VPS服务器 测试速度 支付方式 用途（SSH, WEB-SERVER …) 部署服务器（搭建 SS）使用 putty 远程登陆服务器 putty 使用方法 install123# wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh# chmod +x shadowsocksR.sh# ./shadowsocksR.sh 2&gt;&amp;1 | tee shadowsocksR.log OK info12345678910Congratulations, ShadowsocksR server install completed!Your Server IP :your_server_ipYour Server Port :your_server_portYour Password :your_passwordYour Protocol :your_protocolYour obfs :your_obfsYour Encryption Method:your_encryption_methodWelcome to visit:https://shadowsocks.be/9.htmlEnjoy it! uninstall1# ./shadowsocksR.sh uninstall check status1# /etc/init.d/shadowsocks status use command启动：/etc/init.d/shadowsocks start停止：/etc/init.d/shadowsocks stop重启：/etc/init.d/shadowsocks restart状态：/etc/init.d/shadowsocks status 配置文件路径：/etc/shadowsocks.json日志文件路径：/var/log/shadowsocks.log代码安装目录：/usr/local/shadowsocks 多用户配置示例123456789101112131415161718192021&#123;&quot;server&quot;:&quot;0.0.0.0&quot;,&quot;server_ipv6&quot;: &quot;[::]&quot;,&quot;local_address&quot;:&quot;127.0.0.1&quot;,&quot;local_port&quot;:1080,&quot;port_password&quot;:&#123; &quot;8989&quot;:&quot;password1&quot;, &quot;8990&quot;:&quot;password2&quot;， &quot;8991&quot;:&quot;password3&quot;&#125;,&quot;timeout&quot;:300,&quot;method&quot;:&quot;aes-256-cfb&quot;,&quot;protocol&quot;: &quot;origin&quot;,&quot;protocol_param&quot;: &quot;&quot;,&quot;obfs&quot;: &quot;plain&quot;,&quot;obfs_param&quot;: &quot;&quot;,&quot;redirect&quot;: &quot;&quot;,&quot;dns_ipv6&quot;: false,&quot;fast_open&quot;: false,&quot;workers&quot;: 1&#125; SS 客户端设置… VPS conoha.jp zh HostUS VULTR RECTIFIED.NET ChangeiP DigitalOcean VIRMACH BandwagonHOST | 泥瓦工 Tutorial 分享一下搭建SS教程 ShadowsocksR一键安装脚本 从VPS到搭建私人SS服务器全过程 科学上网讨论与分享 ss免费账号 自建ss服务器教程 Other Link G+ 讨论组]]></content>
+      <categories>
+        <category>Shadowsocks</category>
+        <category>ShadowsocksR</category>
+      </categories>
+      <tags>
+        <tag>Shadowsocks</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Markdown]]></title>
     <url>%2F2017%2F07%2F22%2FMarkdown%2F</url>
     <content type="text"><![CDATA[Site - Link 创始人 John Gruber 的 Markdown 语法说明 Mastering Markdown Markdown 中文版语法说明 在线编辑器 MaHua Syntax guidesPARAGRAPHS AND LINE BREAKS | 段落和换行1段落只是一个或多个连续的文本行，由一个或多个空白行分隔。（空白行是任何看起来像空白行的行 - 只包含空格或制表符的行除外）。正常段落不应缩进空格或制表符。 段落只是一个或多个连续的文本行，由一个或多个空白行分隔。（空白行是任何看起来像空白行的行 - 只包含空格或制表符的行除外）。正常段落不应缩进空格或制表符。 1当你不想要插入&lt;br /&gt;使用降价标签休息，你最终有两个或多个空格行，然后键入回报。 是的，这需要更多的努力创建一个，但一个简单的“每一个换行是一个”规则将不适用于Markdown。 当您使用硬休息格式化时，Markdown的电子邮件风格的块引用和多段列表项目工作效果最好 - 看起来更好。 HEADERS123# This is an &lt;h1&gt; tag## This is an &lt;h2&gt; tag###### This is an &lt;h6&gt; tag BLOCKQUOUTES | 引用文字1&gt; ... LISTS123456789101112131415* ...* ...* ...OR+ ...+ ...+ ...OR- ...- ...- ...OR1. ...2. ...3. ... CODE BLOCK simply indent every line of the block by at least 4 spaces or 1 tab or123\`\`\`...\`\`\` TABLE12345678910First Header | Second Header------------ | -------------Content from cell 1 | Content from cell 2Content in the first column | Content in the second columnor| Tables | Are | Cool || ------------- |:-------------:| -----:|| col 3 is | right-aligned | $1600 || col 2 is | centered | $12 || zebra stripes | are neat | $1 | HORIZONTAL RULES | 水平规则 |123456789* * *********- - ---------------------------------------- LINKS1[an example](http://example.com/ &quot;Title&quot;) EMPHASIS | 强调1234567*single asterisks*_single underscores_**double asterisks**__double underscores__ CODE1Use the `printf()` function. IMAGES123![Alt text](/path/to/img.jpg)![Alt text](/path/to/img.jpg &quot;Optional title&quot;)]]></content>
