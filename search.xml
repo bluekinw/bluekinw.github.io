@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Notes]]></title>
+    <url>%2F2017%2F07%2F31%2FNotes%2F</url>
+    <content type="text"><![CDATA[特殊符号~ Tilde | 波浪号· 间隔符` accent | Grave accent | 重音符 | 反引号 LFLF：在Unix或Unix相容系統（GNU/Linux，AIX，Xenix，Mac OS X，…）、BeOS、Amiga、RISC OSCR+LF：MS-DOS、微軟視窗作業系統（Microsoft Windows）、大部分非Unix的系統CR：Apple II家族，Mac OS至版本9 Cent OS Command12345678910111213141516&gt; lsb_release -a &amp;&amp; uname -a&gt; shutdown -h now&gt; shutdown -r now //reboot&gt; init 0&gt; reboot&gt; halt&gt; poweroff&gt; nmcli [OPTIONS] OBJECT &#123; COMMAND | help &#125;nmcli is a command-line tool for controlling NetworkManager and gettingits status. It is not meant as a replacement of nm-applet or othersimilar clients. Rather it’s a complementary utility to these pro-grams. The main nmcli’s usage is on servers, headless machines or just for power users who prefer the command line. Network Basic KnowledgeLAN : Local Area Network | 局域网WAN : Wide Area Network | 广域网 ppp 协议 : Point-to-Point Protocol (传统电话拨号)ISDN : Intergrated Services Digital Network (综合服务数字网络)ADSL : Asymmetric Digital Subscriber Line (非对称数字网络，透过 pppoe 协议)Cable modem : (电缆调制解调器) MTU : 最大传输单位 ICMP : Internet Control Message ProtocolIP : IP in IP encapsulationTCP : Transmission Control ProtocolUDP : User Datagram Protocol IP : Internet ProtocolIP 32 bits :00000000.00000000.00000000.00000000 &gt; 0.0.0.011111111.11111111.11111111.11111111 &gt; 255.255.255.255Net_ID(24 bits)+Host_ID(8 bits)Network IP(网段地址) : Host_ID(8 bits) 全为 0 (不可用为网段内主机 IP 设定)Broadcast IP(广播地址) : Host_ID(8 bits) 全为 1 (不可用为网段内主机 IP 设定) Public IPClass A : 0.xx.xx.xx ~ 127.xx.xx.xxClass B : 128.xx.xx.xx ~ 191.xx.xx.xxClass C : 192.xx.xx.xx ~ 223.xx.xx.xxClass D : 224.xx.xx.xx ~ 239.xx.xx.xxClass E : 240.xx.xx.xx ~ 255.xx.xx.xx Private IPClass A : 10.0.0.0 - 10.255.255.255Class B : 172.16.0.0 - 172.31.255.255Class C : 192.168.0.0 - 192.168.255.255NetmaskClass A : 255.0.0.0Class B : 255.255.0.0Class C : 255.255.255.0 loopback IP127.0.0.1 IP 获取方式 :static(手动设置)ISP(拨号)DHCP Netmash(子网掩码) as Subnet mask]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>notes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Command-Line About Windows]]></title>
+    <url>%2F2017%2F07%2F30%2FCommand-Line-About-Windows%2F</url>
+    <content type="text"><![CDATA[DocumentsCommand-Line Tools Technical Reference Basic Commandcd语法 | Syntax1234cd [/d] [&lt;Drive&gt;:][&lt;Path&gt;]cd [..]chdir [/d] [&lt;Drive&gt;:][&lt;Path&gt;]chdir [..] 参数 | Parameters 参数 描述 /d 更改当前驱动器以及驱动器的当前目录。 &lt;Drive&gt;: 指定要显示或更改的驱动器（如果与当前驱动器不同）。 &lt;Path&gt; 指定要显示或更改的目录的路径。 [..] 指定要更改为父文件夹。 /? 在命令提示符下显示帮助。 del -1del /? Function? CommandDiskPart -Ping -Netstat -Net -Telnet -Wmic -123456789101112131415161718WMIC BIOS (cmd command)&gt; WMIC BIOS &gt; C:\Version.txt&gt; systeminfo|findstr &quot;BIOS&quot;快速查看当前BIOS版本&gt; wmic bios get serialnumber查看本机序列号刷SLIC&gt; wmic bios get releasedate查看本机BIOS版本&gt; wmic /?查看bios版本型号wmic bios get name,SMBIOSBIOSVersion,manufacturer Tools CommandNetcat - Netcat（通常缩写为nc）是一种用于使用TCP或UDP读取和写入网络连接的计算机网络实用程序。Netcat被设计为可靠的后端，可以直接或轻松地由其他程序和脚本驱动。同时，它是一个功能丰富的网络调试和调查工具，因为它可以产生几乎任何一种用户可能需要的连接，并具有多种内置功能。 其功能列表包括端口扫描，传输文件和端口监听，可用作后门。 wiki 网站 NetCat for Windows - github.com Nmap - Nmap（网络映射器）是一款用于网络发现和安全审计的网络安全工具，它是自由软件。软件名字Nmap是Network Mapper的简称。 wiki 网站 仓库 瑞士军刀：nc.exe -扫描工具：xscan.exe -命令行方式嗅探器： xsniff.exe -终端服务密码破解： tscrack.exe -Shutdown.exe -Others CommandCheck the Windows activation status from the Command Prompt Volume Activation Overview Slmgr.vbs Options for Volume Activation 12345678910111213Windows + R// 查询 激活信息slmgr.vbs -dlv// 查询 OS版本、部分产品密钥、许可证状态slmgr.vbs -dli// 查询 是否永久激活slmgr.vbs -xpr// 查询 系统内核版本，以及注册用户信息winver Notes命令提示符中同时运行多命令 link 先后运行多个不同程序如果在命令行提示符窗口中需要执行多个命令，那么可以同时输入各个命令，让它们一个接着一个地运行。此时我们需要用到“&amp;&amp;”和“||”来组合两条命令，其含义为：&nbsp; &nbsp; &nbsp; &nbsp; a&amp;&amp;b 先执行a命令，成功后再执行b命令。&nbsp; &nbsp; &nbsp; &nbsp; a||b 先执行a命令，若执行不成功则执行b命令，若执行成功则不再执行b命令。例如，在命令行提示符后输入cd..&amp;&amp;dir，回车后首先执行返回上级目录的命令，然后再进行文件和文件夹列表显示。]]></content>
+      <categories>
+        <category>Windows</category>
+        <category>Command</category>
+      </categories>
+      <tags>
+        <tag>cmd</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[OnePlus X H2os 2.0 install Gapp]]></title>
     <url>%2F2017%2F07%2F24%2FOnePlus-X-H2os-2-0-install-Gapp%2F</url>
     <content type="text"><![CDATA[在 氢OS2.0版 基础上安装谷歌应用。 流程 安装 氢OS 2.0版(不重启) 双清 进入fastboot模式， 刷入twrp recovery(3.0.3-onyx) 进入twrp recovery, 刷入open gapp(arm6.0, nano) 重启 清楚Google paly应用缓存 Command12345678910111213&gt; adb devices&gt; adb reboot bootloader-----------------------------------------------&gt; fastboot devices&gt; fastboot oem unlock-----------------------------------------------&gt; adb reboot bootloader&gt; fastboot flash recovery twrp.img&gt; fastboot boot twrp.img LinkOnePlusH2OS_14_OTA_001_all_201610291136_98e9299fced2483e.zip:[Download]OnePlus X officail recovery:[Download Oxygen Recovey (Optional)]twrp-3.0.3-0-onyx.img:[Download] [OK H2os 2.0 安装Gapp][不双清给一加氢 OS 刷上 Google Apps]]]></content>
@@ -32,8 +55,6 @@
     <content type="text"><![CDATA[Site - Link 创始人 John Gruber 的 Markdown 语法说明 Mastering Markdown Markdown 中文版语法说明 在线编辑器 MaHua Syntax guidesPARAGRAPHS AND LINE BREAKS | 段落和换行1段落只是一个或多个连续的文本行，由一个或多个空白行分隔。（空白行是任何看起来像空白行的行 - 只包含空格或制表符的行除外）。正常段落不应缩进空格或制表符。 段落只是一个或多个连续的文本行，由一个或多个空白行分隔。（空白行是任何看起来像空白行的行 - 只包含空格或制表符的行除外）。正常段落不应缩进空格或制表符。 1当你不想要插入&lt;br /&gt;使用降价标签休息，你最终有两个或多个空格行，然后键入回报。 是的，这需要更多的努力创建一个，但一个简单的“每一个换行是一个”规则将不适用于Markdown。 当您使用硬休息格式化时，Markdown的电子邮件风格的块引用和多段列表项目工作效果最好 - 看起来更好。 HEADERS123# This is an &lt;h1&gt; tag## This is an &lt;h2&gt; tag###### This is an &lt;h6&gt; tag BLOCKQUOUTES | 引用文字1&gt; ... LISTS123456789101112131415* ...* ...* ...OR+ ...+ ...+ ...OR- ...- ...- ...OR1. ...2. ...3. ... CODE BLOCK simply indent every line of the block by at least 4 spaces or 1 tab or123\`\`\`...\`\`\` TABLE12345678910First Header | Second Header------------ | -------------Content from cell 1 | Content from cell 2Content in the first column | Content in the second columnor| Tables | Are | Cool || ------------- |:-------------:| -----:|| col 3 is | right-aligned | $1600 || col 2 is | centered | $12 || zebra stripes | are neat | $1 | HORIZONTAL RULES | 水平规则 |123456789* * *********- - ---------------------------------------- LINKS1[an example](http://example.com/ &quot;Title&quot;) EMPHASIS | 强调1234567*single asterisks*_single underscores_**double asterisks**__double underscores__ CODE1Use the `printf()` function. IMAGES123![Alt text](/path/to/img.jpg)![Alt text](/path/to/img.jpg &quot;Optional title&quot;)]]></content>
       <categories>
         <category>Programing Language</category>
-        <category>Markup Language</category>
-        <category>Hexo</category>
       </categories>
       <tags>
         <tag>markdown</tag>
